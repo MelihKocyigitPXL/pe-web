@@ -1,0 +1,99 @@
+/* naam:
+*/
+
+/* 
+kleuren:
+    oranje: orange
+    wit:    white
+    blauw:  0090e3
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18pt;
+}
+
+/* gewoon om de border beter te zien */
+body {
+    margin-left: 10px;
+    max-width: 700px;
+}
+
+input {
+    min-width: 0;
+}
+
+
+.rij {
+    border: orange solid 1px;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rij article {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+}
+
+.rij article select, .rij article label {
+    height: 35px;
+
+}
+
+.rij article label {
+    text-align: right;
+}
+
+.rij article figure {
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+.rij article figure img {
+    width: 100%;
+}
+
+
+
+.rij article p {
+    width: 25%;
+
+}
+
+.rij .betaalwijzen img {
+    width: 50px;
+    vertical-align: bottom;
+}
+
+.betaalwijzen {
+    margin-right: 25%;
+}
+
+#straat {
+    width: 50%;
+    margin: auto;
+}
+
+#opmerkingen {
+    display: inline-block;
+    width: 100%;
+}
+
+#label_straat {
+    width: 16.6%;
+}
+
+#bestellen {
+    width: 100%;
+    height: 75px;
+    color: white;
+    background-color: #0090e3;
+}
+

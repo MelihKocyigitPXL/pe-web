@@ -1,0 +1,226 @@
+/*naam:  */
+
+/*
+    blauw   0090e3
+    oranje  orange
+    geel    f0d10a
+    wit     white
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+div.hoofd {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+main {
+    text-align: left;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 16pt;
+    font-family: serif;
+}
+main h2 {
+    color: #0090e3;
+}
+main div.eerste_lijn {
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+
+}
+/* TODO: deze kan weg? check eens */
+main article.eerste_lijn{
+    width: 25%;
+    text-align: center;
+
+}
+
+main article img {
+    width: 100%;
+    height: auto;
+
+}
+
+.eerste_lijn h2 {
+    padding-bottom: 20px;
+}
+
+main article {
+    padding: 1%;
+}
+main article.recent_bekeken {
+    position: relative;
+    width: 16%;
+    display: flex;
+
+}
+
+main div.recent_bekeken {
+    display: flex;
+    justify-content: space-between;
+}
+
+main article.recent_bekeken img {
+    height: auto;
+    border-radius: 10px;
+    border-style: dotted;
+    padding: 5px;
+    border-color: orange;
+}
+
+main article.recent_bekeken img.heart {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 15%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2px;
+    border-color: white;
+}
+
+.navigatiebalk {
+    position: fixed;
+    background-color: orange;
+    font-family: monospace;
+    color: white;
+    height: auto;
+    width: 100%;
+}
+
+.navigatiebalk h1 {
+    float: left;
+    font-size: 28pt;
+    margin-left: 125px;
+    padding-top: 13px;
+}
+
+.navigatiebalk ul {
+    margin-right: 100px;
+    float: right;
+    font-size: 20pt;
+    list-style-type: none;
+    text-decoration: none;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.navigatiebalk li, a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+#orange {
+    background-color: #0090e3;
+    border-radius: 30px;
+    border-width: 3px;
+    border-style: solid;
+    padding: 3px;
+}
+
+#winkelwagen {
+    width: 50px;
+    height: 50px;
+    background-color: #0090e3;
+    border-radius: 5px;
+
+    border-width: 3px;
+    border-style: solid;
+    padding: 3px;
+}
+
+#blackfriday {
+    width: 100%;
+    margin-top: 120px;
+}
+
+#winkelwagentext {
+    font-size: 0;
+}
+@media screen and (max-width: 1200px) {
+    main {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    /* Aanpassingen navigatiebalk */
+    nav.navigatiebalk {
+        height: auto;
+    }
+    .navigatiebalk {
+        position: initial;
+    }
+    .navigatiebalk li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .navigatiebalk ul {
+        text-align: center;
+        list-style-type: none;
+        float: none;
+        margin-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .navigatiebalk li{
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+    .navigatiebalk li:last-child {
+    }
+
+    #winkelwagentext {
+        font-size: 20pt;
+    }
+    #winkelwagen {
+        display: none;
+    }
+    .navigatiebalk h1 {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    .navigatiebalk li:hover {
+        background-color: #f0d10a;
+    }
+    /* Aanpassingen main */
+    #blackfriday {
+        display: none;
+    }
+    main div.eerste_lijn {
+        flex-wrap: wrap;
+    }
+    main article{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+    main div.recent_bekeken {
+        display: none;
+    }
+    #hoofd_recent_bekeken {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    main article {
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- naam: Melih Kocyigit
+
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="assets/css/oef3.css">
+
+</head>
+<body>
+    <h1>Bedankt voor je bestelling</h1>
+    <form method="get" action="bestel.html">
+        <div class="rij">
+            <article>
+                <p>Lego trein</p>
+                <figure>
+                    <img src="assets/images/train1.jpg" alt="lego trein">
+                </figure>
+                <label for="artikels_eerste_rij">aantal</label>
+                <select name="aantal_legotrein1" id="artikels_eerste_rij">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+
+                </select>
+            </article>
+        </div>
+        <div class="rij">
+            <article>
+                <p>Lego trein</p>
+                <figure>
+                    <img src="assets/images/lego1.jpg" alt="lego 1">
+                </figure>
+                <label for="artikels_tweede_rij">aantal&nbsp;</label>
+                <select name="aantal_lego1" id="artikels_tweede_rij">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+
+                </select>
+            </article>
+        </div>
+        <div class="rij">
+            <article>
+                <p id="betaalwijze">Betaalwijze</p>
+                <div class="betaalwijzen">
+                    <input type="radio" id="visa" name="betaalwijze" value="visa">
+                    <label for="visa"><img src="assets/images/visa.png" alt="visa"></label>
+                    <input type="radio" id="mastercard" name="betaalwijze" value="mastercard">
+                    <label for="mastercard"><img src="assets/images/mastercard.png" alt="mastercard"></label>
+                    <input type="radio" id="overschrijving" name="betaalwijze" value="overschrijving">
+                    <label for="overschrijving">overschrijving</label>
+                </div>
+            </article>
+        </div>
+        <div class="rij">
+            <label for="opmerkingen">Opmerkingen</label>
+            <textarea id="opmerkingen" name="opmerkingen" rows="10"></textarea>
+        </div>
+        <div class="rij">
+                <label for="straat" id="label_straat">Straat</label>
+                <input type="text" id="straat" name="straat" size="30">
+                <label for="nummer">Nummer&nbsp;&nbsp;</label>
+                <input type="text" id="nummer" name="nummer" size="6">
+
+        </div>
+        <div class="rij">
+            <input id="bestellen" type="submit" value="bestellen">
+        </div>
+    </form>
+</body>
+</html>
